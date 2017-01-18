@@ -18,10 +18,11 @@
  */
 
 define([
-    "jquery",
-    "MSP_LightSlider/js/lightslider.min"
+    "jquery"
 ], function($){
-    return function (config, elem) {
-        return $(elem).lightSlider(config);
-    }
+    define(["MSP_LightSlider/js/lightslider.min"], function () {
+        return function (config, elem) {
+            return $(elem).lightSlider(config);
+        }
+    })
 });
