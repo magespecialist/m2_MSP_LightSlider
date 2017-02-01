@@ -17,12 +17,11 @@
  * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  */
 
-define([
-    "jquery"
-], function($){
-    define(["MSP_LightSlider/js/lightslider.min"], function () {
-        return function (config, elem) {
-            return $(elem).lightSlider(config);
-        }
-    })
-});
+ define([
+     "jquery",
+     "MSP_LightSlider/js/lightslider.min"
+ ], function($){
+     return function (config, elem) {
+         return $(elem).lightSlider(config);
+     }
+ });
